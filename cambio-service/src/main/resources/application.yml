@@ -1,0 +1,17 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /cambio-service
+spring:
+  application:
+    name: cambio-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/service-cambio
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+      
